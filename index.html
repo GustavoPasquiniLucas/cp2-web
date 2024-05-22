@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cp-02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="exc1">
+        <h1>Calculadora</h1>
+        <input type="number" id="num1" placeholder="Primeiro número">
+        <input type="number" id="num2" placeholder="Segundo número">
+        <select id="operacao">
+            <option value="+">Soma</option>
+            <option value="-">Subtração</option>
+            <option value="*">Multiplicação</option>
+            <option value="/">Divisão</option>
+        </select>
+        <button onclick="calcular()">Calcular</button>
+        <p id="resultado">O resultado vem aqui...</p>
+    </section>
+
+
+    <section id="exc2">
+        <h1>Salario</h1>
+        <p>Digite o seu salário bruto aqui: </p>
+        <input type="text" id="salario" name="salario"> <br>
+        <button onclick="calcula_salario()">Calcular Impostos</button>
+        <div id="res_salario">
+            <p>O resultado vem aqui...</p>
+        </div>
+    </section>
+
+
+    <section id="exc3">
+        <h1>Simulação de Votação</h1>
+        <p>Escolha um candidato:</p>
+        <form id="votação">
+            <input type="radio" id="candidato1" name="candidato" value="1">
+            <label for="candidato1">Candidato 1</label><br>
+            <input type="radio" id="candidato2" name="candidato" value="2">
+            <label for="candidato2">Candidato 2</label><br>
+            <input type="radio" id="candidato3" name="candidato" value="3">
+            <label for="candidato3">Candidato 3</label><br>
+            <input type="radio" id="candidato4" name="candidato" value="4">
+            <label for="candidato4">Candidato 4</label><br>
+            <input type="radio" id="candidato5" name="candidato" value="5">
+            <label for="candidato5">Candidato 5</label><br>
+            <button type="submit">Votar</button>
+        </form>
+        <div id="res_votacao"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
